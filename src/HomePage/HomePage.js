@@ -1,4 +1,6 @@
 import React from 'react';
+import PieChartComponent from '../ChartJS/ChartJS';
+import RD3Component from '../D3JS.js/D3JS';
 
 
 function HomePage() {
@@ -31,16 +33,15 @@ function HomePage() {
         </article>
 
     <section className="container center" id="main">        
-            <h1>ChartJS Chart</h1>
-            <canvas id="myChart" width="400" height="400"></canvas>
+            <PieChartComponent/>
     </section>
 
     <section className="container center" id="main">
             <h1>
                 D3JS Chart
             </h1>
+            <RD3Component/>
             <svg></svg>
-
     </section>
     </div>
     </main>
